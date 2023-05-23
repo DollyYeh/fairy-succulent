@@ -251,14 +251,16 @@
         }
 
         h3 {
-            font-size: 25px;
+            font-size: 22px;
             font-weight: 500;
-
+            flex-wrap: wrap;
+            margin-left: auto;
         }
 
         p {
             font-size: 18px;
             font-weight: 500;
+            text-align: center;
         }
 
         #GoTop {
@@ -275,7 +277,7 @@
             /* display:flex; */
             position: absolute;
             top: 85%;
-            left: 95%;
+            left: 90%;
             position: fixed;
             z-index: 99;
         }
@@ -290,9 +292,12 @@
 
         }
 
-        @media screen and(min-width:1000px) {
+        @media screen and(min-width:600px) {
             .carousel {
                 width: 100%;
+            }
+            .h3{
+                text-align: justify;
             }
         }
 
@@ -379,7 +384,7 @@
             <section class="aboutme" id="aboutme">
                 <h1>關於妖精多肉植物工作室</h1>
                 <h2>工作室主持：姚 均 老師</h2>
-                <h3>多年植物園藝經驗，對待植物相當有一套的綠手指，對栽培植物、作品品質要求高，經手盆栽美輪美奐，口碑場爆棚!</h3>
+                <h3>多年植物園藝經驗，<br>對待植物相當有一套的綠手指，<br>對栽培植物、作品品質要求高，<br>經手盆栽美輪美奐，<br>口碑場爆棚!</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
                         <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
@@ -405,8 +410,8 @@
                 </div>
                 <hr>
                 <h2>環境介紹：</h2>
-                <h3>妖精多肉庭園，位於桃園中壢福達路二段巷內，環境自然優美，旁有埤塘，<br>
-                    自栽多肉經年，許多老欉多肉與爆盆多肉，色澤飽滿、植質健康，歡迎來園參觀、訂購。</h3>
+                <h3>妖精多肉庭園植物工作室，<br>位於桃園中壢福達路二段巷內，<br>環境自然優美，旁有埤塘，<br>
+                    自栽多肉經年，<br>許多老欉多肉與爆盆多肉，<br>色澤飽滿、植質健康，<br>歡迎來園參觀、訂購。</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
                         <img src="./images/a02.jpg" class="card-img-top" alt="Card image cap" />
@@ -523,7 +528,7 @@
                 </div>
                 <hr>
                 <h2>多肉植物組盆設計:</h2>
-                <h3>多肉組盆小品，不同材質造型的盆器，搭配著多采多姿、個性造型皆有不同迷人魅力的多肉植物，每一盆植栽都讓人賞心悅目!</h3>
+                <h3>多肉組盆小品，不同材質造型的盆器，<br>搭配著多采多姿、個性造型皆有，<br>不同迷人魅力的多肉植物，<br>每一盆植栽都讓人賞心悅目!</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
                         <img src="./images/d01.jpg" class="card-img-top" alt="Card image cap" />
@@ -626,7 +631,7 @@
                 </div>
                 <hr>
                 <h2>多肉植物組盆教學:</h2>
-                <h3>我們也提供植物組盆教學活動服務，若您的公司企業或社團，需要多肉植物組盆DIY教學，歡迎洽詢。
+                <h3>我們也提供植物組盆教學活動服務，<br>若您的公司企業或社團，<br>需要多肉植物組盆DIY教學，<br>歡迎洽詢。
                 </h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
@@ -667,9 +672,9 @@
                 </div>
                 <hr>
                 <h2>客製化商品設計製作:</h2>
-                <h3>告訴我們您想要的盆栽模樣或是提供任何您想要呈現漂亮或有創意的盆栽的容器，<br>
-                    無論是籐藍、竹籃、畫框、蛇木板、鐵絲容器、藝陶盆、金屬盆或玻璃容器...<br>
-                    我們都可以依您喜好量身訂做，每一樣作品皆匠心獨具</h3>
+                <h3>告訴我們您想要的盆栽模樣，<br>或是提供任何您想要呈現漂亮，<br>或有創意的盆栽的容器，<br>
+                    無論是籐藍、竹籃、畫框、<br>蛇木板、鐵絲容器、藝陶盆、<br>金屬盆或玻璃容器...<br>
+                    我們都可以依您喜好量身訂做，<br>每一樣作品皆匠心獨具</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
                         <img src="./images/f01.jpg" class="card-img-top" alt="Card image cap" />
@@ -762,9 +767,9 @@
                 </div>
                 <hr>
                 <h2>免費寄養多肉植物:</h2>
-                <h3>從妖精多肉植物工作室讓您帶回家的多肉們，保證都是健康美麗的<br>
-                    若是您帶回家欣賞一段時間，感覺多肉們好似需要充電，歡迎您帶多肉們回娘家寄養。<br>
-                    我們會好好照顧您的多肉，讓它繼續美麗，您也可以隨時再帶他們回家!</h3>
+                <h3>從妖精多肉植物工作室讓您帶回家的多肉們，<br>保證都是健康美麗的，<br>
+                    若是您帶回家欣賞一段時間，<br>感覺多肉們好似需要充電，<br>歡迎您帶多肉們回娘家寄養。<br>
+                    我們會好好照顧您的多肉，<br>讓它繼續美麗，<br>您也可以隨時再帶他們回家!</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
                         <img src="./images/g01.jpg" class="card-img-top" alt="Card image cap" />
@@ -804,7 +809,7 @@
                 </div>
                 <hr>
                 <h2>多肉植物便當(套餐)組合:</h2>
-                <h3>多種肉肉植物便當組合，歡迎洽詢訂購。</h3>
+                <h3>多種肉肉植物便當組合，<br>歡迎洽詢訂購。</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
                         <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
@@ -833,12 +838,12 @@
             <section class="aboutSucculentPlant" id="aboutSucculentPlant">
                 <h1>多肉植物簡介。多肉植物照護</h1>
                 <h2>多肉植物簡介與照護</h2>
-                <h3>多肉植物種類繁多，造型色彩豐富又有個性，充滿療癒感與魅力，小小空間就可以栽種，<br>
-                    能在土壤乾旱的條件下擁有肥大的葉或莖，主要生長於沙漠及海岸乾旱地區。<br>
-                    它們的根、莖特別肥大，葉片退化，以利於儲存大量的水分。<br>
-                    多肉很耐旱，一到兩週不澆水都不會有事，仙人掌甚至可以一個月只澆1次。<br>
-                    保持通風，澆水時一定要澆透，也就是要澆到水從盆底孔洞流出來，才能確保多肉有吸到水。<br>
-                    切記不要澆到多肉身上，直接澆根部即可，以免多肉的葉片或細毛卡著水分，一潮濕就容易生病。</h3>
+                <h3>多肉植物種類繁多，<br>造型色彩豐富又有個性，<br>充滿療癒感與魅力，<br>小小空間就可以栽種，<br>
+                    能在土壤乾旱的條件下擁有肥大的葉或莖，<br>主要生長於沙漠及海岸乾旱地區。<br>
+                    它們的根、莖特別肥大，<br>葉片退化，<br>以利於儲存大量的水分。<br>
+                    多肉很耐旱，<br>一到兩週不澆水都不會有事，<br>仙人掌甚至可以一個月只澆1次。<br>
+                    保持通風，<br>澆水時一定要澆透，<br>也就是要澆到水從盆底孔洞流出來，<br>才能確保多肉有吸到水。<br>
+                    切記不要澆到多肉身上，<br>直接澆根部即可，<br>以免多肉的葉片或細毛卡著水分，<br>一潮濕就容易生病。</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
                         <img src="./images/i01.jpg" class="card-img-top" alt="Card image cap" />
@@ -895,7 +900,7 @@
                 <h1>其他商品服務</h1>
                 <h2>節慶盆與送禮栽:</h2>
                 <h3>提供各式精彩細緻桌上型節慶與送禮盆栽。<br>
-                    舉凡開幕致慶、新居落成、榮獲高昇、情人節、周年紀念...讓您送禮送到心尖兒</h3>
+                    舉凡開幕致慶、新居落成、榮獲高昇、情人節、周年紀念...<br>讓您送禮送到心尖兒</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
                         <img src="./images/j01.jpg" class="card-img-top" alt="Card image cap" />
@@ -1011,7 +1016,7 @@
             <section class="seasonalProduct" id="seasonalProduct">
                 <h1>季節商品</h1>
                 <h2>乳斑千年芋:</h2>
-                <h3>在夏秋之際，我們自栽的乳斑千年芋正是它的季節，歡迎愛好者前來參觀選購。</h3>
+                <h3>在夏秋之際，<br>我們自栽的乳斑千年芋正是它的季節，<br>歡迎愛好者前來參觀選購。</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
                         <img src="./images/s03.jpg" class="card-img-top" alt="Card image cap" />
@@ -1030,7 +1035,7 @@
                 </div>
                 <hr>
                 <h2>開花草莓苗:</h2>
-                <h3>另外本園也在冬季左右提供即將開花結果的草莓苗可以選購，帶回去自己種自己吃，安心美味!</h3>
+                <h3>另外本園也在冬季左右，<br>提供即將開花結果的草莓苗可以選購，<br>帶回去自己種自己吃，<br>安心美味!</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
                         <img src="./images/strabarry.jpg" class="card-img-top" alt="Card image cap" />
@@ -1075,16 +1080,20 @@
             </section>
             <!-- </div> -->
             <section>
-                <div id="map">
-                    <p class="studio-map">工作室/園址:桃園市中壢區福達路二段1巷56號<br>
-                        (本園位於故事咖啡館後方 / 來園請預約 / 遇雨不開園)
-                    </p>
+                <div id="map" style="justify-content: center;margin-bottom: 0%;">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.662349375973!2d121.16772891537791!3d24.97760004670324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468253e4cbacedf%3A0x33a7f5c50f1963c4!2z5pWF5LqL5ZKW5ZWh!5e0!3m2!1szh-TW!2stw!4v1677071098855!5m2!1szh-TW!2stw"
-                        width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+                <div style="background-color: rgb(137, 170, 231); width: 600px;height:100px;margin: auto;">
+                    <p><br>
+                        工作室/園址:桃園市中壢區福達路二段1巷56號<br>
+                        (本園位於故事咖啡館後方 / 來園請預約 / 遇雨不開園)
+                    </p>
+                </div>
             </section>
+            <br>
             <footer class="text-center py-2">
                 工作室/園址:320桃園市中壢區福達路二段1巷56號<br>
                 妖精多肉植物工作室 Fairy Succulent Plant studio<br>
