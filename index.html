@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>+++妖精多肉植物工作室+++</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css_boots/bootstrap.min.css">
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            margin: 0px auto;
+        }
+ */
+        body {
+            z-index: -1;
+            background-color: rgb(162, 213, 195);
+        }
+
+        .wrap {
+            background-image: url(./images/top_image.png);
+            /* background-image: linear-gradient(rgba(162, 213, 195, 1), lemonchiffon, rgba(157, 141, 181, 1)); */
+            background-color: rgb(162, 213, 195);
+            /* z-index: -1; */
+            position: relative;
+            height: 80rem;
+            /* width: 3rem; */
+            /* margin-top: -20vh; */
+            /* overflow: hidden; */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            /* background-color: lemonchiffon; */
+            /* background-color: rgb(89, 128, 114); */
+
+        }
+
+        .container-fluid {
+            width: 100%;
+            /* background-image: linear-gradient(rgba(89, 128, 22, 0.7), rgba(89, 128, 22, 0.7)), url(./images/background_01.jpg); */
+        }
+
+        /* .wrap {
+            width: 100%;
+            margin: 0px auto;
+        } */
+
+        /* header {
+            width: 100%;
+            background-image: linear-gradient(rgba(162, 213, 195, 1), lemonchiffon, rgba(157, 141, 181, 1));
+        } */
+
+        /* #top {
+            width: 100%;
+            margin: 0px;
+            background-image: linear-gradient(rgba(162, 213, 195, 1), lemonchiffon, rgba(157, 141, 181, 1));
+        } */
+
+        /* #English_title {
+            position: absolute;
+            z-index: 1;
+            margin-top: 120px;
+            /* font-size: 11rem;
+            line-height: 180px;  
+            font-size: 19.5vmin;
+            line-height: 18vmin;
+            text-align: center;
+            color: rgb(157, 141, 181);
+            opacity: 0.2;
+        } */
+
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        .logo {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            padding: 10px;
+            margin: auto;
+            /* margin-top: -30px; */
+        }
+
+        .ul {
+            display: flex;
+            justify-content: center;
+            /* background-color: rgb(89, 128, 114);*/
+            width: 100%;
+            margin: 0px auto;
+            /* border-bottom: 1px solid rgb(162, 213, 195) ; */
+        }
+
+        nav {
+            background-image: linear-gradient(lemonchiffon 3%, rgba(162, 213, 195, 1) 8%, rgb(140, 123, 167)90%);
+        }
+
+        /* div.ul {
+            background-color: background-color: padding: 1px 0px;
+
+        } */
+
+        ul {
+            display: inline-block;
+            margin: 0px;
+
+        }
+
+        li {
+            background-color: rgb(157, 141, 181);
+            list-style-type: none;
+            padding: 10px 20px;
+            letter-spacing: 0.1rem;
+            float: left;
+            margin-right: 2px;
+            border-radius: 3px;
+            border-top: 1px solid white;
+            box-shadow: 0px 0px 1px 0px;
+            align-items: center;
+            border: 3px double mediumpurple;
+
+        }
+
+        li img {
+            float: left;
+            padding-right: 5px;
+        }
+
+        /* #li_01 {
+            background-color: rgb(162, 213, 195);
+
+        }
+
+        #li_02 {
+            background-color: rgb(157, 141, 181);
+        }
+
+        #li_03 {
+            background-color: rgb(124, 155, 193);
+        }
+
+        #li_04 {
+            background-color: rgb(0, 134, 131);
+        }
+
+        #li_05 {
+            background-color: rgb(162, 213, 195);
+        } */
+
+        a {
+            font-size: 1.2rem;
+            color: floralwhite;
+            text-align: center;
+            text-decoration: none;
+            text-shadow: 0px 0px 2px rgb(22, 34, 2);
+            white-space: nowrap;
+        }
+
+        a:hover {
+            color: rgb(16, 57, 12);
+            font-size: 1.3rem;
+            border: radius 50%;
+            text-shadow: 1px 1px 2px rgb(255, 255, 255);
+            transition: all .3s;
+        }
+
+        .carousel {
+            width: 80%;
+            margin: 0px auto;
+        }
+
+        /* #content {
+            background-image: url(./images/fairy_logo.png) 80% no-repeat;
+
+        } */
+
+        #map {
+            display: flex;
+            margin: 50px auto;
+        }
+
+        .studio-map {
+            width: 500px;
+            font-size: 1.1rem;
+            color: azure;
+            background-color: rgb(124, 155, 193);
+            padding: 35px;
+
+        }
+
+        .aboutme {
+            color: rgb(0, 134, 131);
+            text-align: center;
+        }
+
+        .succulent_product {
+            text-align: center;
+            color: indigo;
+            background-color: rgb(140, 123, 167);
+        }
+
+        .aboutSucculentPlant {
+            color: royalblue;
+            text-align: center;
+            background-color: rgb(124, 155, 193);
+        }
+
+        .othersProduct {
+            color: rgb(0, 134, 131);
+            text-align: center;
+        }
+
+        .seasonalProduct {
+            color: indigo;
+            text-align: center;
+            background-color: rgb(140, 123, 167);
+        }
+
+        .contectMe {
+            color: royalblue;
+            text-align: center;
+            background-color: rgb(124, 155, 193);
+        }
+
+        footer {
+            background-color: rgb(0, 134, 131);
+            color: azure;
+        }
+
+        h1 {
+            font-size: 55px;
+            font-weight: 600;
+            padding-top: 50px;
+            border: 3px double;
+            box-shadow: 0px 1px white;
+            padding: 5px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 35px;
+        }
+
+        h3 {
+            font-size: 25px;
+            font-weight: 500;
+
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        #GoTop {
+            background-color: mediumpurple;
+            color: white;
+            padding-top: 15px;
+            font-size: small;
+            border-radius: 50%;
+            border: 5px solid beige;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            align-items: center;
+            /* display:flex; */
+            position: absolute;
+            top: 85%;
+            left: 95%;
+            position: fixed;
+            z-index: 99;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex-wrap: wrap;
+
+        }
+
+        @media screen and(min-width:1000px) {
+            .carousel {
+                width: 100%;
+            }
+        }
+
+        /* 主色調 
+      background-color: rgb(162,213,195);background-color: rgb(157,141,181);
+ background-color: rgb(124,155,193);background-color: rgb(213,233,215);
+ background-color: rgb(180,216,0);darkmagenta mediumpurple
+      */
+    </style>
+</head>
+<!-- 主色調background-color
+   -->
+
+<body>
+    <div id="GoTop"><a href="#logo" style="font-size:15px;">Go Top<br>回上方</a></div>
+    <div class="wrap">
+        <div class="container-fluid g-0">
+            <header class="g-0">
+                <!-- <nav> -->
+                <div id="top">
+                    <!-- <div id="English_title">Succulent Plant studio</div> -->
+                    <div class="logo" id="logo"><img src="./images/logo.png" width:80%
+                            alt="Spirit Lady Succulent Logo" /></div>
+                </div>
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon mx-auto"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li id="li_01" class="nav-item"><img src="./images/i-01.png" height="25px" alt="About Me"><a
+                                    href="#aboutme">關於妖精多肉植物</a></li>
+                            <li id="li_02" class="nav-item"><img src="./images/i-02.png" height="25px"
+                                    alt="Succulent Plant Product"><a href="#Succulent_Product">多肉植物商品</a></li>
+                            <li id="li_03" class="nav-item"><img src="./images/i-03.png" height="25px"
+                                    alt="About Succulent Plant"><a href="#aboutSucculentPlant">多肉植物簡介</a></li>
+                            <li id="li_04" class="nav-item"><img src="./images/i-04.png" height="25px"
+                                    alt="Other Product"><a href="#othersProduct">其他商品服務</a></li>
+                            <li id="li_02" class="nav-item"><img src="./images/i-02.png" height="25px"
+                                    alt="Succulent Plant Product"><a href="#seasonalProduct">季節商品</a></li>
+                            <li id="li_05" class="nav-item"><img src="./images/i-05.png" height="25px"
+                                    alt="Contect Me"><a href="#contectMe">聯絡&諮詢妖精</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div id="carousel" style="background-color:rgb(124, 155, 193); padding: 10px 0px;">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/carousel_01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel_02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel_03.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel_04.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel_05.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel_06.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel_07.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel_08.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel_09.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="container-fluid g-0">
+            <!-- <div class="row mx-auto"> -->
+            <section class="aboutme" id="aboutme">
+                <h1>關於妖精多肉植物工作室</h1>
+                <h2>工作室主持：姚 均 老師</h2>
+                <h3>多年植物園藝經驗，對待植物相當有一套的綠手指，對栽培植物、作品品質要求高，經手盆栽美輪美奐，口碑場爆棚!</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">姚 均 老師</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">姚 均 老師 </p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">姚 均 老師</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>環境介紹：</h2>
+                <h3>妖精多肉庭園，位於桃園中壢福達路二段巷內，環境自然優美，旁有埤塘，<br>
+                    自栽多肉經年，許多老欉多肉與爆盆多肉，色澤飽滿、植質健康，歡迎來園參觀、訂購。</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/a02.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">工作室一隅 唐印</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/a03.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">仙人掌開著吸睛的花朵</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/a05.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">工作室一隅</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/a06.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">玉露</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/a07.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">工作室一隅</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/a08.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">工作室一隅 多肉單品</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/a09.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">工作室一隅 多肉單品</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/a10.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">工作室一隅 多肉植物組盆</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/a11.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">工作室一隅 觀賞埤塘</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/a12.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">工作室一隅 毬蘭開花</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="succulent_product" id="Succulent_Product">
+                <h1>多肉植物商品與服務</h1>
+                <h2>景觀庭院設計:</h2>
+                <h3>多肉植物為主角的庭園設計</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/ba01.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">景觀庭園設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/ba03.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">景觀庭園設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/ba02.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">景觀庭園設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/ba04.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">景觀庭園設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/ba05.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">景觀庭園設計</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>多肉植物組盆設計:</h2>
+                <h3>多肉組盆小品，不同材質造型的盆器，搭配著多采多姿、個性造型皆有不同迷人魅力的多肉植物，每一盆植栽都讓人賞心悅目!</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/d01.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d02.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d03.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d04.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d05.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d06.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d07.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d08.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d09.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d10.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d12.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d14.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d15.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/d16.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆設計</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>多肉植物組盆教學:</h2>
+                <h3>我們也提供植物組盆教學活動服務，若您的公司企業或社團，需要多肉植物組盆DIY教學，歡迎洽詢。
+                </h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆教學</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆教學</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆教學</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆教學</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物組盆教學</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>客製化商品設計製作:</h2>
+                <h3>告訴我們您想要的盆栽模樣或是提供任何您想要呈現漂亮或有創意的盆栽的容器，<br>
+                    無論是籐藍、竹籃、畫框、蛇木板、鐵絲容器、藝陶盆、金屬盆或玻璃容器...<br>
+                    我們都可以依您喜好量身訂做，每一樣作品皆匠心獨具</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/f01.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">客製化商品設計製作</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/f02.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">客製化商品設計製作</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/f03.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">客製化商品設計製作</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/f04.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">客製化商品設計製作</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/f05.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">客製化商品設計製作</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/f06.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">客製化商品設計製作</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>小品盆栽與飾品:</h2>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/e01.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">小品多肉植物</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/e02.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">小品多肉植物</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/e03.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">小品多肉植物</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/e04.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">小品多肉植物</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/e05.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">小品多肉植物</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/e06.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">小品多肉植物</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>免費寄養多肉植物:</h2>
+                <h3>從妖精多肉植物工作室讓您帶回家的多肉們，保證都是健康美麗的<br>
+                    若是您帶回家欣賞一段時間，感覺多肉們好似需要充電，歡迎您帶多肉們回娘家寄養。<br>
+                    我們會好好照顧您的多肉，讓它繼續美麗，您也可以隨時再帶他們回家!</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/g01.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">寄養多肉植物</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/g02.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">寄養多肉植物</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/g03.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">寄養多肉植物</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/g04.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">寄養多肉植物</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/g05.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">歡迎多肉植物回娘家</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>多肉植物便當(套餐)組合:</h2>
+                <h3>多種肉肉植物便當組合，歡迎洽詢訂購。</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物便當餐盒</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物便當餐盒 </p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">多肉植物便當餐盒</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="aboutSucculentPlant" id="aboutSucculentPlant">
+                <h1>多肉植物簡介。多肉植物照護</h1>
+                <h2>多肉植物簡介與照護</h2>
+                <h3>多肉植物種類繁多，造型色彩豐富又有個性，充滿療癒感與魅力，小小空間就可以栽種，<br>
+                    能在土壤乾旱的條件下擁有肥大的葉或莖，主要生長於沙漠及海岸乾旱地區。<br>
+                    它們的根、莖特別肥大，葉片退化，以利於儲存大量的水分。<br>
+                    多肉很耐旱，一到兩週不澆水都不會有事，仙人掌甚至可以一個月只澆1次。<br>
+                    保持通風，澆水時一定要澆透，也就是要澆到水從盆底孔洞流出來，才能確保多肉有吸到水。<br>
+                    切記不要澆到多肉身上，直接澆根部即可，以免多肉的葉片或細毛卡著水分，一潮濕就容易生病。</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/i01.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">多肉植物照護</h5>
+                            <p class="card-text">澆水要澆透至盆底孔洞流水</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/i02.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">多肉植物照護</h5>
+                            <p class="card-text">保持空間通風</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/i03.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">多肉植物照護</h5>
+                            <p class="card-text">造型色彩豐富又有個性，充滿療癒感與魅力</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/i04.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">多肉植物照護</h5>
+                            <p class="card-text">白天放置光線明亮處</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/i05.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">多肉植物照護</h5>
+                            <p class="card-text">造型有個性</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/i06.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">多肉植物照護</h5>
+                            <p class="card-text">充滿療癒感與魅力</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/i07.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">多肉植物照護</h5>
+                            <p class="card-text">不需每天給水</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="othersProduct" id="othersProduct">
+                <h1>其他商品服務</h1>
+                <h2>節慶盆與送禮栽:</h2>
+                <h3>提供各式精彩細緻桌上型節慶與送禮盆栽。<br>
+                    舉凡開幕致慶、新居落成、榮獲高昇、情人節、周年紀念...讓您送禮送到心尖兒</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/j01.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">節慶與送禮盆栽</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/j02.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">節慶與送禮盆栽</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/j03.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">節慶與送禮盆栽</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/j04.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">節慶與送禮盆栽</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>其他植物商品</h2>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/k01.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">鹿角蕨</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/k02.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">鹿角蕨</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/k03.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">鹿角蕨</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/k04.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">鹿角蕨</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/k05.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">鹿角蕨</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/k06.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">鹿角蕨</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/k09.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">太陽秋海棠</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/k10.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">太陽秋海棠</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/k11.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">空氣鳳梨</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/k12.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">空氣鳳梨</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/k13.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">節慶與送禮盆栽</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="seasonalProduct" id="seasonalProduct">
+                <h1>季節商品</h1>
+                <h2>乳斑千年芋:</h2>
+                <h3>在夏秋之際，我們自栽的乳斑千年芋正是它的季節，歡迎愛好者前來參觀選購。</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/s03.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">乳斑千年芋</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/s04.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">乳斑千年芋</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>開花草莓苗:</h2>
+                <h3>另外本園也在冬季左右提供即將開花結果的草莓苗可以選購，帶回去自己種自己吃，安心美味!</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/strabarry.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">草莓苗</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/strabarry02.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">草莓苗</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>瀑布蘭:</h2>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/k08.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">瀑布蘭</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/k07.jpg" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">瀑布蘭</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contectMe" id="contectMe">
+                <h1>聯絡諮詢</h1>
+                <h3>工作室(多肉庭園)主持人:姚 均老師<br>
+                    聯絡妖精:0968597148<br>
+                    加Line ID：spirit lady</h3>
+                <br>
+            </section>
+            <!-- </div> -->
+            <section>
+                <div id="map">
+                    <p class="studio-map">工作室/園址:桃園市中壢區福達路二段1巷56號<br>
+                        (本園位於故事咖啡館後方 / 來園請預約 / 遇雨不開園)
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.662349375973!2d121.16772891537791!3d24.97760004670324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468253e4cbacedf%3A0x33a7f5c50f1963c4!2z5pWF5LqL5ZKW5ZWh!5e0!3m2!1szh-TW!2stw!4v1677071098855!5m2!1szh-TW!2stw"
+                        width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <footer class="text-center py-2">
+                工作室/園址:320桃園市中壢區福達路二段1巷56號<br>
+                妖精多肉植物工作室 Fairy Succulent Plant studio<br>
+                彩虹樹 數位設計工作室網頁企劃製作<br>
+                Copyrights © 2023 All Rights Reserved
+            </footer>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
