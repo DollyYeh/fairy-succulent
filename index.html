@@ -10,15 +10,10 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./css_boots/bootstrap.min.css">
     <style>
-        /* * {
+         * {
             margin: 0;
             padding: 0;
         }
-
-        html {
-            margin: 0px auto;
-        }
- */
         body {
             z-index: -1;
             background-color: rgb(162, 213, 195);
@@ -26,87 +21,37 @@
 
         .wrap {
             background-image: url(./images/top_image.png);
-            /* background-image: linear-gradient(rgba(162, 213, 195, 1), lemonchiffon, rgba(157, 141, 181, 1)); */
             background-color: rgb(162, 213, 195);
-            /* z-index: -1; */
             position: relative;
             height: 80rem;
-            /* width: 3rem; */
-            /* margin-top: -20vh; */
-            /* overflow: hidden; */
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            /* background-color: lemonchiffon; */
-            /* background-color: rgb(89, 128, 114); */
 
         }
 
         .container-fluid {
             width: 100%;
-            /* background-image: linear-gradient(rgba(89, 128, 22, 0.7), rgba(89, 128, 22, 0.7)), url(./images/background_01.jpg); */
-        }
-
-        /* .wrap {
-            width: 100%;
-            margin: 0px auto;
-        } */
-
-        /* header {
-            width: 100%;
-            background-image: linear-gradient(rgba(162, 213, 195, 1), lemonchiffon, rgba(157, 141, 181, 1));
-        } */
-
-        /* #top {
-            width: 100%;
-            margin: 0px;
-            background-image: linear-gradient(rgba(162, 213, 195, 1), lemonchiffon, rgba(157, 141, 181, 1));
-        } */
-
-        /* #English_title {
-            position: absolute;
-            z-index: 1;
-            margin-top: 120px;
-            /* font-size: 11rem;
-            line-height: 180px;  
-            font-size: 19.5vmin;
-            line-height: 18vmin;
-            text-align: center;
-            color: rgb(157, 141, 181);
-            opacity: 0.2;
-        } */
-
-        img {
-            display: block;
-            margin: auto;
-        }
-
-        .logo {
-            width: 100%;
-            position: relative;
-            z-index: 2;
-            padding: 10px;
-            margin: auto;
-            /* margin-top: -30px; */
         }
 
         .ul {
             display: flex;
             justify-content: center;
-            /* background-color: rgb(89, 128, 114);*/
             width: 100%;
             margin: 0px auto;
-            /* border-bottom: 1px solid rgb(162, 213, 195) ; */
+        }
+
+        #top {
+            display: flex;
+        }
+
+        .logo {
+            margin: 10px auto;
         }
 
         nav {
             background-image: linear-gradient(lemonchiffon 3%, rgba(162, 213, 195, 1) 8%, rgb(140, 123, 167)90%);
         }
-
-        /* div.ul {
-            background-color: background-color: padding: 1px 0px;
-
-        } */
 
         ul {
             display: inline-block;
@@ -134,27 +79,6 @@
             padding-right: 5px;
         }
 
-        /* #li_01 {
-            background-color: rgb(162, 213, 195);
-
-        }
-
-        #li_02 {
-            background-color: rgb(157, 141, 181);
-        }
-
-        #li_03 {
-            background-color: rgb(124, 155, 193);
-        }
-
-        #li_04 {
-            background-color: rgb(0, 134, 131);
-        }
-
-        #li_05 {
-            background-color: rgb(162, 213, 195);
-        } */
-
         a {
             font-size: 1.2rem;
             color: floralwhite;
@@ -172,15 +96,10 @@
             transition: all .3s;
         }
 
-        .carousel {
-            width: 80%;
+        .carousel-inner {
+            width: 85%;
             margin: 0px auto;
         }
-
-        /* #content {
-            background-image: url(./images/fairy_logo.png) 80% no-repeat;
-
-        } */
 
         #map {
             display: flex;
@@ -251,10 +170,11 @@
         }
 
         h3 {
+            width: 360px;
+            margin: 15px auto;
+            text-align: left;
             font-size: 22px;
             font-weight: 500;
-            flex-wrap: wrap;
-            margin-left: auto;
         }
 
         p {
@@ -276,8 +196,8 @@
             align-items: center;
             /* display:flex; */
             position: absolute;
-            top: 80%;
-            right: 12%;
+            top: 85%;
+            left: 90%;
             position: fixed;
             z-index: 99;
         }
@@ -292,35 +212,39 @@
 
         }
 
-        @media screen and(min-width:600px) {
-            .carousel {
+        @media screen and (max-width:800px) {
+            #carousel{
                 width: 100%;
+                height:auto;
+                padding:0px;
             }
-            .h3{
-                text-align: justify;
+            #carouselExampleSlidesOnly{
+                width: 100%;
+                height:auto;
+                padding:0px;
+            }
+            .carousel-inner {
+                width: 100%;
+                height:auto;
+                padding:0px;
             }
         }
 
-        /* 主色調 
+        /* 主色調background-color 
       background-color: rgb(162,213,195);background-color: rgb(157,141,181);
  background-color: rgb(124,155,193);background-color: rgb(213,233,215);
  background-color: rgb(180,216,0);darkmagenta mediumpurple
       */
     </style>
 </head>
-<!-- 主色調background-color
-   -->
-
 <body>
     <div id="GoTop"><a href="#logo" style="font-size:15px;">Go Top<br>回上方</a></div>
     <div class="wrap">
         <div class="container-fluid g-0">
             <header class="g-0">
-                <!-- <nav> -->
                 <div id="top">
-                    <!-- <div id="English_title">Succulent Plant studio</div> -->
-                    <div class="logo" id="logo"><img src="./images/logo.png" width:80%
-                            alt="Spirit Lady Succulent Logo" /></div>
+                    <div class="logo" id="logo"><img src="./images/logo.png" width:80% alt="Fairy Succulent Logo" />
+                    </div>
                 </div>
                 <nav class="navbar navbar-expand-lg">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -346,7 +270,7 @@
                 </nav>
             </header>
         </div>
-        <div id="carousel" style="background-color:rgb(124, 155, 193); padding: 10px 0px;">
+        <div id="carousel" style="background-color:rgb(124, 155, 193);">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -380,35 +304,8 @@
             </div>
         </div>
         <div id="content" class="container-fluid g-0">
-            <!-- <div class="row mx-auto"> -->
             <section class="aboutme" id="aboutme">
                 <h1>關於妖精多肉植物工作室</h1>
-                <h2>工作室主持：姚 均 老師</h2>
-                <h3>多年植物園藝經驗，<br>對待植物相當有一套的綠手指，<br>對栽培植物、作品品質要求高，<br>經手盆栽美輪美奐，<br>口碑場爆棚!</h3>
-                <div class="col d-flex justify-content-around flex-wrap">
-                    <div class="card my-4">
-                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">妖精多肉植物工作室</h5>
-                            <p class="card-text">姚 均 老師</p>
-                        </div>
-                    </div>
-                    <div class="card my-4">
-                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">妖精多肉植物工作室</h5>
-                            <p class="card-text">姚 均 老師 </p>
-                        </div>
-                    </div>
-                    <div class="card my-4">
-                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">妖精多肉植物工作室</h5>
-                            <p class="card-text">姚 均 老師</p>
-                        </div>
-                    </div>
-                </div>
-                <hr>
                 <h2>環境介紹：</h2>
                 <h3>妖精多肉庭園植物工作室，<br>位於桃園中壢福達路二段巷內，<br>環境自然優美，旁有埤塘，<br>
                     自栽多肉經年，<br>許多老欉多肉與爆盆多肉，<br>色澤飽滿、植質健康，<br>歡迎來園參觀、訂購。</h3>
@@ -484,6 +381,34 @@
                         </div>
                     </div>
                 </div>
+                <h2>工作室主持：姚 均 老師</h2>
+                <h3>多年植物園藝經驗，<br>對待植物相當有一套的綠手指，<br>對栽培植物、作品品質要求高，<br>經手盆栽美輪美奐，<br>口碑場爆棚!</h3>
+                <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">姚 均 老師</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">姚 均 老師 </p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <img src="./images/logo.png" class="card-img-top" alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">妖精多肉植物工作室</h5>
+                            <p class="card-text">姚 均 老師</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+
             </section>
             <section class="succulent_product" id="Succulent_Product">
                 <h1>多肉植物商品與服務</h1>
@@ -528,7 +453,7 @@
                 </div>
                 <hr>
                 <h2>多肉植物組盆設計:</h2>
-                <h3>多肉組盆小品，不同材質造型的盆器，<br>搭配著多采多姿、個性造型皆有，<br>不同迷人魅力的多肉植物，<br>每一盆植栽都讓人賞心悅目!</h3>
+                <h3>多樣不同材質造型的盆器，<br>搭配著多采多姿、個性造型皆有，<br>不同迷人魅力的多肉植物，<br>每一盆植栽都讓人賞心悅目!</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
                         <img src="./images/d01.jpg" class="card-img-top" alt="Card image cap" />
@@ -767,7 +692,7 @@
                 </div>
                 <hr>
                 <h2>免費寄養多肉植物:</h2>
-                <h3>從妖精多肉植物工作室讓您帶回家的多肉們，<br>保證都是健康美麗的，<br>
+                <h3>從妖精多肉植物工作室<br>讓您帶回家的多肉們，<br>保證都是健康美麗的，<br>
                     若是您帶回家欣賞一段時間，<br>感覺多肉們好似需要充電，<br>歡迎您帶多肉們回娘家寄養。<br>
                     我們會好好照顧您的多肉，<br>讓它繼續美麗，<br>您也可以隨時再帶他們回家!</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
@@ -839,7 +764,7 @@
                 <h1>多肉植物簡介。多肉植物照護</h1>
                 <h2>多肉植物簡介與照護</h2>
                 <h3>多肉植物種類繁多，<br>造型色彩豐富又有個性，<br>充滿療癒感與魅力，<br>小小空間就可以栽種，<br>
-                    能在土壤乾旱的條件下擁有肥大的葉或莖，<br>主要生長於沙漠及海岸乾旱地區。<br>
+                    能在土壤乾旱的條件下<br>擁有肥大的葉或莖，<br>主要生長於沙漠及海岸乾旱地區。<br>
                     它們的根、莖特別肥大，<br>葉片退化，<br>以利於儲存大量的水分。<br>
                     多肉很耐旱，<br>一到兩週不澆水都不會有事，<br>仙人掌甚至可以一個月只澆1次。<br>
                     保持通風，<br>澆水時一定要澆透，<br>也就是要澆到水從盆底孔洞流出來，<br>才能確保多肉有吸到水。<br>
@@ -899,7 +824,7 @@
             <section class="othersProduct" id="othersProduct">
                 <h1>其他商品服務</h1>
                 <h2>節慶盆與送禮栽:</h2>
-                <h3>提供各式精彩細緻桌上型節慶與送禮盆栽。<br>
+                <h3>提供各式精彩細緻<br>桌上型節慶與送禮盆栽。<br>
                     舉凡開幕致慶、新居落成、榮獲高昇、情人節、周年紀念...<br>讓您送禮送到心尖兒</h3>
                 <div class="col d-flex justify-content-around flex-wrap">
                     <div class="card my-4">
